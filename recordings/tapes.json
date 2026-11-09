@@ -1,0 +1,723 @@
+{
+ "app": "machine-double",
+ "recordedAt": "2026-11-09T13:05:46.513Z",
+ "tapes": [
+  {
+   "machine": "calculator",
+   "mode": "dream",
+   "models": [
+    {
+     "id": "openai/gpt-5.4-nano",
+     "title": "GPT-5.4 Nano"
+    },
+    {
+     "id": "deepseek/deepseek-v4.1-flash",
+     "title": "DeepSeek V4.1 Flash"
+    },
+    {
+     "id": "z-ai/glm-5.3-flash",
+     "title": "GLM-5.3-Flash"
+    }
+   ],
+   "steps": [
+    {
+     "input": "17 * 23",
+     "replies": {
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "391",
+       "ms": 5601,
+       "cost": 0.0000481
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "391",
+       "ms": 5954,
+       "cost": 0.0000352
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "391",
+       "ms": 7148,
+       "cost": 0.0000497
+      }
+     }
+    },
+    {
+     "input": "2^64",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "18446744073709551616",
+       "ms": 5586,
+       "cost": 0.0000743
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "18446744073709551616",
+       "ms": 6345,
+       "cost": 0.0000595
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "18446744073709551616",
+       "ms": 6631,
+       "cost": 0.0000615
+      }
+     }
+    },
+    {
+     "input": "987654321 * 123456789",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "121932631112635269",
+       "ms": 6416,
+       "cost": 0.0000568
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "121932631112635269",
+       "ms": 8589,
+       "cost": 0.000409
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "121932631112635269",
+       "ms": 14192,
+       "cost": 0.00052
+      }
+     }
+    },
+    {
+     "input": "1/7",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "0.142857142857...",
+       "ms": 5985,
+       "cost": 0.0000629
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "0.142857142857...",
+       "ms": 6597,
+       "cost": 0.0000509
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "0.142857142857...",
+       "ms": 10354,
+       "cost": 0.000178
+      }
+     }
+    },
+    {
+     "input": "0.1 + 0.2",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "0.3",
+       "ms": 5241,
+       "cost": 0.0000486
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "0.3",
+       "ms": 7377,
+       "cost": 0.000119
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "0.3",
+       "ms": 10182,
+       "cost": 0.000121
+      }
+     }
+    },
+    {
+     "input": "-2^2",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "-4",
+       "ms": 5858,
+       "cost": 0.0000525
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "-4",
+       "ms": 5939,
+       "cost": 0.0000482
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "-4",
+       "ms": 21885,
+       "cost": 0.0000784
+      }
+     }
+    },
+    {
+     "input": "(3 + 4) / 0",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "Error: division by zero",
+       "ms": 4758,
+       "cost": 0.0000519
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "Error: division by zero",
+       "ms": 5965,
+       "cost": 0.0000585
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "Error: division by zero",
+       "ms": 6980,
+       "cost": 0.0000951
+      }
+     }
+    },
+    {
+     "input": "99999999999 * 99999999999",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "9999999999800000000001",
+       "ms": 5693,
+       "cost": 0.0000653
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "9999999999800000000001",
+       "ms": 14098,
+       "cost": 0.00112
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "error": "HTTP 400",
+       "ms": 34490
+      }
+     }
+    },
+    {
+     "input": "2^100 - 1",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "1267650600228229401496703205375",
+       "ms": 6354,
+       "cost": 0.0000782
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "1267650600228229401496703205375",
+       "ms": 7550,
+       "cost": 0.000116
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "1267650600228229401496703205375",
+       "ms": 16701,
+       "cost": 0.000143
+      }
+     }
+    },
+    {
+     "input": "355/113",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "3.14159292035...",
+       "ms": 5898,
+       "cost": 0.0000795
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "3.14159292036...",
+       "ms": 8004,
+       "cost": 0.00032
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "3.14159292035...",
+       "ms": 21104,
+       "cost": 0.000557
+      }
+     }
+    }
+   ]
+  },
+  {
+   "machine": "kv",
+   "mode": "dream",
+   "models": [
+    {
+     "id": "openai/gpt-5.4-nano",
+     "title": "GPT-5.4 Nano"
+    },
+    {
+     "id": "deepseek/deepseek-v4.1-flash",
+     "title": "DeepSeek V4.1 Flash"
+    },
+    {
+     "id": "z-ai/glm-5.3-flash",
+     "title": "GLM-5.3-Flash"
+    }
+   ],
+   "steps": [
+    {
+     "input": "SET visits 41",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "OK",
+       "ms": 5569,
+       "cost": 0.0000585
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "OK",
+       "ms": 5945,
+       "cost": 0.0000603
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "OK",
+       "ms": 15154,
+       "cost": 0.0000786
+      }
+     }
+    },
+    {
+     "input": "INCR visits",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "(integer) 42",
+       "ms": 4766,
+       "cost": 0.0000612
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "42",
+       "ms": 6300,
+       "cost": 0.0000624
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(integer) 42",
+       "ms": 9149,
+       "cost": 0.000132
+      }
+     }
+    },
+    {
+     "input": "GET visits",
+     "replies": {
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "\"42\"",
+       "ms": 5301,
+       "cost": 0.000094
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "\"42\"",
+       "ms": 5320,
+       "cost": 0.0000662
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "\"42\"",
+       "ms": 6150,
+       "cost": 0.0000622
+      }
+     }
+    },
+    {
+     "input": "APPEND visits !",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "3",
+       "ms": 5880,
+       "cost": 0.0000669
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(integer) 3",
+       "ms": 6143,
+       "cost": 0.000103
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "(integer) 3",
+       "ms": 6197,
+       "cost": 0.0000713
+      }
+     }
+    },
+    {
+     "input": "INCR visits",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "(error) ERR value is not an integer",
+       "ms": 4794,
+       "cost": 0.000072
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "ERR value is not an integer",
+       "ms": 6621,
+       "cost": 0.000129
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(error) ERR value is not an integer",
+       "ms": 6906,
+       "cost": 0.0000837
+      }
+     }
+    },
+    {
+     "input": "SET city \"New York\"",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "OK",
+       "ms": 5530,
+       "cost": 0.0000723
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "OK",
+       "ms": 5802,
+       "cost": 0.0000672
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "OK",
+       "ms": 8190,
+       "cost": 0.0000996
+      }
+     }
+    },
+    {
+     "input": "STRLEN city",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "(integer) 8",
+       "ms": 5372,
+       "cost": 0.0000734
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "8",
+       "ms": 6034,
+       "cost": 0.0000744
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(integer) 8",
+       "ms": 6182,
+       "cost": 0.000111
+      }
+     }
+    },
+    {
+     "input": "RENAME city town",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "OK",
+       "ms": 4687,
+       "cost": 0.0000702
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "OK",
+       "ms": 5721,
+       "cost": 0.0000915
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "OK",
+       "ms": 7050,
+       "cost": 0.0000766
+      }
+     }
+    },
+    {
+     "input": "KEYS",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "1) \"town\"\n2) \"visits\"",
+       "ms": 5331,
+       "cost": 0.0000818
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "1) \"town\"\n2) \"visits\"",
+       "ms": 6037,
+       "cost": 0.000228
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "1) \"town\"",
+       "ms": 6169,
+       "cost": 0.0000824
+      }
+     }
+    },
+    {
+     "input": "DEL visits town ghost",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "(integer) 1",
+       "ms": 5421,
+       "cost": 0.0000843
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "(integer) 2",
+       "ms": 6328,
+       "cost": 0.0000756
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(integer) 2",
+       "ms": 8580,
+       "cost": 0.0002
+      }
+     }
+    },
+    {
+     "input": "KEYS",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "(empty array)",
+       "ms": 5188,
+       "cost": 0.0000766
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "1) \"town\"",
+       "ms": 5909,
+       "cost": 0.0000876
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(empty array)",
+       "ms": 6231,
+       "cost": 0.0000874
+      }
+     }
+    },
+    {
+     "input": "EXISTS visits",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "(integer) 0",
+       "ms": 6676,
+       "cost": 0.0000786
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "(integer) 0",
+       "ms": 6980,
+       "cost": 0.0000894
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(integer) 0",
+       "ms": 7443,
+       "cost": 0.000105
+      }
+     }
+    },
+    {
+     "input": "INCRBY score 7",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "7",
+       "ms": 6126,
+       "cost": 0.0000895
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "(integer) 7",
+       "ms": 6966,
+       "cost": 0.0000807
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(integer) 7",
+       "ms": 6997,
+       "cost": 0.000188
+      }
+     }
+    },
+    {
+     "input": "GET score",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "\"7\"",
+       "ms": 5343,
+       "cost": 0.0000817
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "\"7\"",
+       "ms": 6432,
+       "cost": 0.0000934
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "(integer) 7",
+       "ms": 8537,
+       "cost": 0.000236
+      }
+     }
+    }
+   ]
+  },
+  {
+   "machine": "text",
+   "mode": "dream",
+   "models": [
+    {
+     "id": "openai/gpt-5.4-nano",
+     "title": "GPT-5.4 Nano"
+    },
+    {
+     "id": "deepseek/deepseek-v4.1-flash",
+     "title": "DeepSeek V4.1 Flash"
+    },
+    {
+     "id": "z-ai/glm-5.3-flash",
+     "title": "GLM-5.3-Flash"
+    }
+   ],
+   "steps": [
+    {
+     "input": "wc -l sales.txt",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "10 sales.txt",
+       "ms": 5772,
+       "cost": 0.0000673
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "10 sales.txt",
+       "ms": 5951,
+       "cost": 0.0000646
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "10 sales.txt",
+       "ms": 6755,
+       "cost": 0.000106
+      }
+     }
+    },
+    {
+     "input": "grep -c coffee sales.txt",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "4",
+       "ms": 5542,
+       "cost": 0.0000682
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "4",
+       "ms": 6021,
+       "cost": 0.0000795
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "4",
+       "ms": 6595,
+       "cost": 0.000218
+      }
+     }
+    },
+    {
+     "input": "grep -ic coffee sales.txt",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "4",
+       "ms": 5756,
+       "cost": 0.000126
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "5",
+       "ms": 6376,
+       "cost": 0.00011
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "5",
+       "ms": 8755,
+       "cost": 0.0000787
+      }
+     }
+    },
+    {
+     "input": "cut -d ' ' -f2 sales.txt | sort | uniq -c",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "   2 bagel\n   1 Coffee\n   4 coffee\n   1 muffin\n   2 tea",
+       "ms": 6299,
+       "cost": 0.000101
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "1 Coffee\n      2 bagel\n      4 coffee\n      1 muffin\n      2 tea",
+       "ms": 7251,
+       "cost": 0.00034
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "1 Coffee\n      2 bagel\n      4 coffee\n      1 muffin\n      2 tea",
+       "ms": 19337,
+       "cost": 0.000976
+      }
+     }
+    },
+    {
+     "input": "cut -d ' ' -f4 sales.txt | sort | uniq -c | sort -rn | head -n 1",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "3 bob",
+       "ms": 6454,
+       "cost": 0.000149
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "3 alice",
+       "ms": 7780,
+       "cost": 0.000357
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "error": "HTTP 400",
+       "ms": 53906
+      }
+     }
+    },
+    {
+     "input": "sort -r sales.txt | head -n 3",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "2026-11-05 muffin 3.10 dave\n2026-11-05 coffee 3.50 carol\n2026-11-04 tea 2.00 bob",
+       "ms": 6564,
+       "cost": 0.000101
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "2026-11-05 muffin 3.10 dave\n2026-11-05 coffee 3.50 carol\n2026-11-04 tea 2.00 bob",
+       "ms": 8505,
+       "cost": 0.000513
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "2026-11-05 muffin 3.10 dave\n2026-11-05 coffee 3.50 carol\n2026-11-04 tea 2.00 bob",
+       "ms": 10726,
+       "cost": 0.000668
+      }
+     }
+    },
+    {
+     "input": "tail -n 2 sales.txt | rev",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "evad 01.3 niffum 50-11-6202\nlorac 05.3 eeffoc 50-11-6202",
+       "ms": 5896,
+       "cost": 0.000106
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "lorac 05.3 eeffoc 50-11-6202\nevad 01.3 niffum 50-11-6202",
+       "ms": 10532,
+       "cost": 0.000564
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "lorac 05.3 eeffoc 50-11-6202\nevad 01.3 niffum 50-11-6202",
+       "ms": 10656,
+       "cost": 0.000742
+      }
+     }
+    },
+    {
+     "input": "wc sales.txt",
+     "replies": {
+      "openai/gpt-5.4-nano": {
+       "text": "10 40 276 sales.txt",
+       "ms": 6095,
+       "cost": 0.000109
+      },
+      "z-ai/glm-5.3-flash": {
+       "text": "10 40 200 sales.txt\n\nWait: compute. Lines 10. Words per line 4 → 40. Characters: line lengths: \"2026-11-01 coffee 3.50 alice\" = 10+1+6+1+4+1+5=28 +1=29. Bagel line: 10+1+5+1+4+1+3=25+1=26. Coffee bob same as line1=29. Tea carol: 10+1+3+1+4+1+5=25+1=26. Alice coffee=29. Coffee dave: 10+1+6+1+4+1+4=27+1=28. Bagel alice=26. Tea bob=25+1=26. Carol coffee=29. Muffin dave=27+1=28. Sum: 29+26+29+26+29+28+26+26+29+28=276.</think>10 40 276 sales.txt",
+       "ms": 6544,
+       "cost": 0.000206
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "error": "HTTP 400",
+       "ms": 39875
+      }
+     }
+    },
+    {
+     "input": "grep -v coffee sales.txt | cut -d ' ' -f3",
+     "replies": {
+      "z-ai/glm-5.3-flash": {
+       "text": "2.25\n2.00\n4.75\n2.25\n2.00\n3.10",
+       "ms": 6314,
+       "cost": 0.000183
+      },
+      "openai/gpt-5.4-nano": {
+       "text": "bob\ncarol\ndave\nalice\nbob\ndave",
+       "ms": 6671,
+       "cost": 0.000304
+      },
+      "deepseek/deepseek-v4.1-flash": {
+       "text": "2.25\n2.00\n4.75\n2.25\n2.00\n3.10",
+       "ms": 13024,
+       "cost": 0.000363
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

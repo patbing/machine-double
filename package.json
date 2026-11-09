@@ -1,0 +1,12 @@
+{
+  "name": "machine-double",
+  "version": "1.0.0",
+  "description": "A model plays the machine; a real one checks every line. Built with Pollinations (BYOP).",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/",
+    "serve": "python -m http.server 8130 --bind 127.0.0.1",
+    "record": "node tools/record.mjs"
+  }
+}
