@@ -76,6 +76,11 @@
     var body = { model: model.id, messages: messages, max_tokens: C.MAX_TOKENS };
     if (model.effort) body.reasoning_effort = 'low';
     return once(key, body, signal).then(function (r) {
+      // shortcut: some providers reject reasoning_effort "low" (DeepSeek on azure-openai, 2026-11); send once more without it.
+      if (!r.ok && r.status === 400 && body.reasoning_effort && /reasoning_effort/.test(r.error)) {
+        body = Object.assign({}, body); delete body.reasoning_effort;
+        return once(key, body, signal);
+      }
       var retry = !r.ok && !r.cancelled && (r.status === 0 || r.status === 429 || r.status >= 500);
       if (!retry) return r;
       var wait = r.status === 429 ? Math.min((r.retryAfter || 3) * 1000, 15000) : 1500;
